@@ -1,0 +1,113 @@
+/***************************************************/
+/* General */
+/***************************************************/
+
+body {
+    background-color: #35356d;
+    display: block;
+    margin: 0px;
+}       /* The background of the website. */
+
+h1 {
+    color: white;
+    line-height: 0px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Bahnschrift;
+}       /* Mainly used for titles */
+
+h3 {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial;
+}       /* Majority of content is written in this font size */
+
+h5 {
+    color: white;
+    line-height: 0px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Bahnschrift;
+}       /* For very small text */
+
+#image {
+    border-radius: 50px;
+}       /* Used on images to make the borders softer*/
+
+/***************************************************/
+/* Footer */
+/***************************************************/
+
+FooterText {
+    color: white;
+}       /* Colour of the text in the footer */
+
+footer {
+    background-color: #20204b;
+    border-radius: 10px;
+
+}       /* The footer's background colour and style */
+
+#copyright {
+    color: white;
+    opacity: 50%;
+}       /* Prints a copyright logo on the site */
+
+/***************************************************/
+/* Navigation Bar */
+/***************************************************/
+
+.navbar {
+    overflow: hidden;
+    background-color: #20204b;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    border-radius: 25px;
+}       /* Navigation bar's background that holds links to different pages of the website. */
+
+.navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 50px;
+    }       /* Allows the text in the nav bar to be presented more neatly. */
+
+.navbar a:hover {
+            background: #060636;
+            color: #f2f2f2;
+            border-radius: 50px;
+        }       /* When the mouse hovers over a link in the Nav Bar it darkens the link showing it can be clicked. */
+
+#onPage {
+    background: #f2f2f2;
+    color: black;
+}       /* Used to show what page the user is on by surrounding the link in the nav bar in a white box. */
+
+/***************************************************/
+/* Other */
+/***************************************************/
+
+a:link, a:visited{
+
+    color: white;
+
+}       /* Allows links to appear white */
+
+#Image_In_Line {
+    margin: 4px;
+    float: left;
+    border-radius: 50px;
+}       /* Allows an image to be on the same line as text */
+
+Italic {
+    color: white;
+    font-style: italic;
+    line-height: 2px;
+    margin: 10px;
+    padding: 10px;
+}       /* Used to make text in italics */
