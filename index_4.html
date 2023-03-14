@@ -10,7 +10,33 @@
 
     <title>My Website</title>
 
+    
     <style>
+
+        /*Tables only appear in index 4 therefore are inside of the embedded style sheet.*/
+
+        table { /*This is called first for a table to appear*/
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+            td:first-child:hover::after { /*When somebody hovers over the td it makes the tooltip appear*/
+                content: attr(data-tooltip); /*Without this important line of code the tooltip will never appear*/
+                position: absolute; /*Without the position being absolute it pushes content to the side of the screen*/
+                top: -100%; /*This number is negative so the tooltip appears above the hovered over text*/
+                background-color: #160b59;
+                color: #fff; /*Set to white for visibility*/
+                padding: 8px;
+                border-radius: 25px;
+                white-space: nowrap; /*Makes it all appear on one line*/
+            }
     </style>
 
     <link rel="stylesheet" href="style/stylus.css">
@@ -48,14 +74,46 @@
         <br />
         <br />
 
-            <h1><b>Our Standard And Premium Bundles</b></h1>
+        <h1><b>Our Standard And Premium Bundles</b></h1>
 
         <hr />
 
 
         <h3>
-            <p>If you are interested in purchasing our product please follow us on our social media accounts to stay updated!</p>
+            <p>We have three available bundles shown below for Beddy-Bye. </p>
+
+            <br /><br /><br />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bundle Name</th>
+                        <th>Colours</th>
+                        <th>Price (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-tooltip="Includes the Beddy-Bye and a selection of two colours.">Basic</td>
+                        <td>Red, Blue</td>
+                        <td>24.99</td>
+                    </tr>
+                    <tr>
+                        <td data-tooltip="Includes the Beddy-Bye, a unique box and two special colours.">Advanced</td>
+                        <td>Gold, Silver</td>
+                        <td>26.99</td>
+                    </tr>
+                    <tr>
+                        <td data-tooltip="Includes the Beddy-Bye, a deluxe box and a selection of all of the colours in higher quality.">Deluxe</td>
+                        <td>Red, Blue, Gold, Silver</td>
+                        <td>39.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </h3>
+
+        <br/><br /><br /><br /><br /><br /><br /><br />
 
     </main>
 
