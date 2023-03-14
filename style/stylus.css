@@ -62,9 +62,10 @@ footer {
     overflow: hidden;
     background-color: #20204b;
     position: fixed;
-    top: 0; 
+    top: 0;
     width: 100%;
     border-radius: 25px;
+    z-index: 1;
 }       /* Navigation bar's background that holds links to different pages of the website. */
 
 .navbar a {
@@ -111,3 +112,4 @@ Italic {
     margin: 10px;
     padding: 10px;
 }       /* Used to make text in italics */
+

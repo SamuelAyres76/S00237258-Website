@@ -11,6 +11,64 @@
     <title>My Website</title>
 
     <style>
+        /***************************************************/
+        /* Colours */
+        /***************************************************/
+        red {
+            font-size: 25px;
+            font-family: arial;
+            color: #ff5353;
+        }
+
+        white {
+            font-size: 25px;
+            font-family: arial;
+            color: #e6e6e6;
+        }
+
+        blue {
+            font-size: 25px;
+            font-family: arial;
+            color: #37a0f7;
+        }
+
+        gold {
+            font-size: 25px;
+            font-family: arial;
+            color: hsl(56, 86%, 46%);
+        }
+
+        /***************************************************/
+        /* Flip-Card */
+        /***************************************************/
+
+        .flip-card {
+            width: 400px;                       /* Required for proper rotation. Without it the flipped image is severly dispoisitioned. */
+            height: 300px;
+        }
+
+        .flip-card-inner {
+            transition: transform 0.6s;         /* The amount of time the rotations takes before reaching the other side. */
+            transform-style: preserve-3d;       /* Without transform-style the flipped image is sent to the right side of the screen. */
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);         /* Makes sure the image is flipped exactly 180 degrees.
+                                                   Example: If set to 360 degrees it would fully flip around straight back to the beginning. */
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;                 /* Required for proper rotation. Without it the flipped image is severly dispoisitioned. */
+            width: 100%;                        /* Ensures that there is no empty space at the edges of the images. */
+            height: 100%;
+            backface-visibility: hidden;        /* Without backface-visibility it will show the second image flipped. */
+            z-index: 1;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);         /* Ensures the image makes it the fully way around. */
+        }
+
     </style>
 
     <link rel="stylesheet" href="style/stylus.css">
@@ -25,7 +83,6 @@
                 <a id="onPage" href="index_2.html">About Our Product</a>
                 <a href="index_3.html">About Us</a>
                 <a href="index_4.html">Pricing</a>
-                <a href="index_5.html">Order Now!</a>
                 <b><a href="#Return to top">Click to return to top</a></b>
             </navTitle>
         </center>
@@ -49,15 +106,64 @@
         <br />
         <br />
 
+        <h1>Heat Regulator</h1>
+        <hr />
+        <h3>A cold room could disturb the baby. With the press of a button "Beddy-Bye" will control the heating in the room! For the duration of baby's sleep it will keep the room at a comfortable 18°C.</h3>
+        <center><img id="image" src="images/sun.png" width="20%"></center>
 
+        <h1>Curtain Control</h1>
+        <hr />
+        <h3>Did you forget to close the curtains? "Beddy-Bye" is able to open and close your curtains to ensure the baby is not disturbed from any illumination.</h3>
+        <center><img id="image" src="images/Curtain.png" width="20%"></center>
+
+        <h1>Lullaby Player</h1>
+        <hr />
+        <h3>Oh no, the baby has woken up! If this happens you will be alerted and a lullaby will play in an attempt to calm them down.</h3>
+        <center><img id="image" src="images/Music.png" alt="Music" style="width:300px;height:300px;"></center>
+
+        <h1>Do Not Disturb</h1>
+        <hr />
+        <h3>When you put all of that time and effort into getting the baby to sleep it is annoying for a partner or relative to waltz into the room disturbing the baby. The Do Not Disturb feature will illuminate a light on the door to remind everyone the baby is asleep!</h3>
+        <center><img id="image" src="images/Sleep.png" width="20%"></center>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <center><h1>Colours</h1></center>
+        <hr>
+
+        <center><h3>Make sure the "Beddy-Bye" fits the theme of your room with its variety of colours:</h3></center>
+        <br /><br />
+
+        <!--Colours are defined in style above-->
         <center>
-            <h1><b>Beddy-Bye's Capabilities</b></h1>
-        </center>
+            <white>-Silver White</white>
+            <br /><br />
+            <blue>-Sapphire Blue</blue>
+            <br /><br />
+            <red>-Ruby Red</red>
+            <br /><br />
+            <gold>-Glistening Gold</gold>
+            <br /><br />
 
+            <!--A flip card that when hovered over shows information. In this case it shows the other two colours of the Beddy-Bye.-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!--2 lines below are for 2 of the colours. -->
+                    <div class="flip-card-front">
 
-        <h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </h3>
+                        <img src="images/Beddy-Bye-Showcase-B&W.jpg" alt="Avatar" style="width:400px;height:300px;">
+
+                    </div>
+                    <!--Once the mouse is over the box it will flip the image-->
+                    <div class="flip-card-back">
+
+                        <img src="images/Beddy-Bye-Showcase-R&G.jpg" alt="Avatar" style="width:400px;height:300px;">
+
+                    </div>
+                </div>
+            </div>
+
+            <h3>(Hover over the image to see other colours.)</h3>
 
     </main>
 
@@ -66,14 +172,16 @@
         <br />
         <FooterText>
             - Follow us on:
+
             <br /><br />
-            <a href="https://facebook.com/" title="Facebook">- Facebook</a>
-            <br /><br />
-            <a href="https://twitter.com/" title="Twitter">- Twitter</a>
-            <br /><br />
-            <a href="https://instagram.com/" title="Instagram">- Instagram</a>
+
+            <a href="https://facebook.com/"><div title="Facebook"> <img src="images/Facebook_Icon.png" width="2%"> </div> </a>
+            <a href="https://Twitter.com/"><div title="Twitter"> <img src="images/Twitter_Icon.png" width="2%"> </div> </a>
+            <a href="https://Instagram.com/"><div title="Instagram"> <img src="images/Instagram_Icon.png" width="2%"> </div> </a>
         </FooterText>
+
         <br /> <br />
+
         <FooterText id="copyright">&copy; Drift's Beddy-Bye 2023 -</FooterText>
     </footer>
 

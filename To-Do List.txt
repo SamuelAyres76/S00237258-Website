@@ -1,0 +1,35 @@
+
+		General
+*****************************************************************************
+- Make something appear above navbar until user scrolls down. (logo, product name and appealing background.)
+- Get Github URL working.
+- Add a video link somewhere. (Perhaps for how to put a baby to sleep?)
+- Format better. (Mess around with fonts, sizes, titles, etc)
+- Clean up code.
+
+
+		Index 1
+*****************************************************************************
+- Remake the Graphs (or resize? They need to be the same size regardless.)
+
+
+		Index 2
+*****************************************************************************
+- More text (Needs a better overall description before going into its features?)
+
+
+		Index 3
+*****************************************************************************
+- More images would be nice. (blurred faces of fake employee's)
+
+
+		Index 4
+*****************************************************************************
+- This page will be where most formatting will take place.
+- Include tables, Columns, Selection processes, etc.
+
+
+		Style
+*****************************************************************************
+- Check for any once off items and move them to their respective index imbedded css.
+- Center the items inside of the navbar.
