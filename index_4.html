@@ -38,6 +38,33 @@
                 white-space: nowrap; /*Makes it all appear on one line*/
             }
     </style>
+    
+    <script>
+
+        /* Validation for the form. If criteria is not met the data will not be accepted. */
+        function validate() {
+            var email = document.getElementById("email").value;
+            if (email.length == 0) {
+                alert("Please enter your email");
+                return false;
+            }
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                alert("Please enter a valid email address. (example@yahoo.ie)");
+                return false;
+            }
+            var phone = document.getElementById("phone").value;
+            if (phone.length == 0) {
+                alert("Please enter your phone number");
+                return false;
+            }
+            if (phone.length != 10) {
+                alert("Please enter a 10-digit phone number");
+                return false;
+            }
+            alert("Thank you. You will now be returned to the main page.");
+            return true;
+        }
+    </script>
 
     <link rel="stylesheet" href="style/stylus.css">
 </head>
@@ -110,6 +137,38 @@
                     </tr>
                 </tbody>
             </table>
+
+            <br />
+
+            <h1 id="blink">Free Trial</h1>
+            <script type="text/javascript">
+                var blink = document.getElementById('blink');
+                setInterval(function () {
+                    blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                }, 800);
+            </script>
+
+            <hr />
+
+            <h3>
+                Interested in a free trial of our product? Please provide your email and phone number below and we will get in contact with you!
+
+                <form onsubmit="return validate();" id="task1">
+                    <fieldset>
+                        <p>
+                            <label for="email">Enter email here: </label>
+                            <input type="email" name="email" id="email" required />
+                        </p>
+                        <p>
+                            <label for="phone">Enter phone number here: </label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required />
+                        </p>
+                        <p>
+                            <input type="submit" id="submit" value="Submit">
+                        </p>
+                    </fieldset>
+                </form>
+            </h3>
 
         </h3>
 

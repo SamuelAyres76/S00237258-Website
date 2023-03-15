@@ -6,6 +6,7 @@
 - Add a video link somewhere. (Perhaps for how to put a baby to sleep?)
 - Format better. (Mess around with fonts, sizes, titles, etc)
 - Clean up code.
+- get rid of multiple <br/>
 
 
 		Index 1
