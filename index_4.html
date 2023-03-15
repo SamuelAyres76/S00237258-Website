@@ -45,23 +45,18 @@
         function validate() {
             var email = document.getElementById("email").value;
             if (email.length == 0) {
-                alert("Please enter your email");
                 return false;
             }
             if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
-                alert("Please enter a valid email address. (example@yahoo.ie)");
                 return false;
             }
             var phone = document.getElementById("phone").value;
             if (phone.length == 0) {
-                alert("Please enter your phone number");
                 return false;
             }
             if (phone.length != 10) {
-                alert("Please enter a 10-digit phone number");
                 return false;
             }
-            alert("Thank you. You will now be returned to the main page.");
             return true;
         }
     </script>
@@ -153,7 +148,7 @@
             <h3>
                 Interested in a free trial of our product? Please provide your email and phone number below and we will get in contact with you!
 
-                <form onsubmit="return validate();" id="task1">
+                <form action = "https://www.gamestop.ie/Switch/Games/69448/luigi-s-mansion-3" id="task1" method="get">
                     <fieldset>
                         <p>
                             <label for="email">Enter email here: </label>

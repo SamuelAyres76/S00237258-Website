@@ -26,8 +26,7 @@
 
 		Index 4
 *****************************************************************************
-- This page will be where most formatting will take place.
-- Include tables, Columns, Selection processes, etc.
+- done :)
 
 
 		Style
