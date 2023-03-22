@@ -1,12 +1,7 @@
 
 		General
 *****************************************************************************
-- Make something appear above navbar until user scrolls down. (logo, product name and appealing background.)
-- Get Github URL working.
-- Add a video link somewhere. (Perhaps for how to put a baby to sleep?)
-- Format better. (Mess around with fonts, sizes, titles, etc)
-- Clean up code.
-- get rid of multiple <br/>
+- Try to get background image working
 
 
 		Index 1
@@ -16,20 +11,23 @@
 
 		Index 2
 *****************************************************************************
-- More text (Needs a better overall description before going into its features?)
+- 
 
 
 		Index 3
 *****************************************************************************
-- More images would be nice. (blurred faces of fake employee's)
+- 
 
 
 		Index 4
 *****************************************************************************
-- done :)
+-
 
-
-		Style
+		Checklist requirements
 *****************************************************************************
-- Check for any once off items and move them to their respective index imbedded css.
-- Center the items inside of the navbar.
+- Project Report
+
+- Background Image (impossible)
+- UL @ OL + custom image (fugget about it)
+
+- Validate it

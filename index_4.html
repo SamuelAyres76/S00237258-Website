@@ -4,16 +4,26 @@
 -->
 <html lang="en">
 <head>
+
+
+
     <meta charset="utf-8" />
-    <meta name="description" content="This is an example" />
-    <meta name="keywords" content="html5, test webpage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html5, Beddy-Bye" />
 
-    <title>My Website</title>
 
-    
+
+
+    <title>Beddy-Bye Official Website</title>
+
+
     <style>
 
+
+
         /*Tables only appear in index 4 therefore are inside of the embedded style sheet.*/
+
+
 
         table { /*This is called first for a table to appear*/
             border-collapse: collapse;
@@ -25,6 +35,11 @@
             padding: 8px;
             border-bottom: 1px solid #ddd;
             position: relative;
+            color: white;
+            font-family: Arial;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.5;
         }
 
             td:first-child:hover::after { /*When somebody hovers over the td it makes the tooltip appear*/
@@ -38,7 +53,7 @@
                 white-space: nowrap; /*Makes it all appear on one line*/
             }
     </style>
-    
+
     <script>
 
         /* Validation for the form. If criteria is not met the data will not be accepted. */
@@ -62,6 +77,9 @@
     </script>
 
     <link rel="stylesheet" href="style/stylus.css">
+
+    <link rel="icon" href="images/favicon_io/favicon.ico">
+
 </head>
 
 <body>
@@ -83,10 +101,11 @@
 
     <header>
         <center>
+
             <p>
-                </br>
                 <h1>Pricing</h1>
             </p>
+
         </center>
     </header>
 
@@ -102,40 +121,66 @@
 
 
         <h3>
-            <p>We have three available bundles shown below for Beddy-Bye. </p>
-
+            We have three available bundles shown below for Beddy-Bye.
+        </h3>
             <br /><br /><br />
 
             <table>
+
+
+
                 <thead>
+
                     <tr>
                         <th>Bundle Name</th>
                         <th>Colours</th>
                         <th>Price (€)</th>
                     </tr>
+
                 </thead>
+
+
+
                 <tbody>
+
+
+
                     <tr>
                         <td data-tooltip="Includes the Beddy-Bye and a selection of two colours.">Basic</td>
                         <td>Red, Blue</td>
-                        <td>24.99</td>
+                        <td>19.99</td>
                     </tr>
+
                     <tr>
                         <td data-tooltip="Includes the Beddy-Bye, a unique box and two special colours.">Advanced</td>
                         <td>Gold, Silver</td>
-                        <td>26.99</td>
+                        <td>22.99</td>
                     </tr>
+
                     <tr>
                         <td data-tooltip="Includes the Beddy-Bye, a deluxe box and a selection of all of the colours in higher quality.">Deluxe</td>
                         <td>Red, Blue, Gold, Silver</td>
-                        <td>39.99</td>
+                        <td>24.99</td>
                     </tr>
+
+
+
                 </tbody>
+
+
+
             </table>
+
+
 
             <br />
 
+
+
             <h1 id="blink">Free Trial</h1>
+
+
+
             <script type="text/javascript">
                 var blink = document.getElementById('blink');
                 setInterval(function () {
@@ -143,50 +188,61 @@
                 }, 800);
             </script>
 
-            <hr />
 
-            <h3>
-                Interested in a free trial of our product? Please provide your email and phone number below and we will get in contact with you!
 
-                <form action = "https://www.gamestop.ie/Switch/Games/69448/luigi-s-mansion-3" id="task1" method="get">
-                    <fieldset>
-                        <p>
-                            <label for="email">Enter email here: </label>
-                            <input type="email" name="email" id="email" required />
-                        </p>
-                        <p>
-                            <label for="phone">Enter phone number here: </label>
-                            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required />
-                        </p>
-                        <p>
-                            <input type="submit" id="submit" value="Submit">
-                        </p>
-                    </fieldset>
-                </form>
-            </h3>
+        <hr />
 
+
+
+        <h3>
+            Interested in a free trial of our product? Please provide your email and phone number below and we will get in contact with you!
+
+            <form action="https://www.gamestop.ie/Switch/Games/69448/luigi-s-mansion-3" id="task1" method="get">
+                <fieldset>
+                    <p>
+                        <label for="email">Enter email here: </label>
+                        <input type="email" name="email" id="email" required />
+                    </p>
+                    <p>
+                        <label for="phone">Enter phone number here: </label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required />
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Submit">
+                    </p>
+                </fieldset>
+            </form>
         </h3>
 
-        <br/><br /><br /><br /><br /><br /><br /><br />
+
+
+        <br /><br /><br /><br /><br /><br /><br /><br />
+
+
 
     </main>
 
 
+
     <footer>
-        <br />
+
+
+
         <FooterText>
             - Follow us on:
 
-            <br /><br />
 
-            <a href="https://facebook.com/"><div title="Facebook"> <img src="images/Facebook_Icon.png" width="2%"> </div> </a>
-            <a href="https://Twitter.com/"><div title="Twitter"> <img src="images/Twitter_Icon.png" width="2%"> </div> </a>
-            <a href="https://Instagram.com/"><div title="Instagram"> <img src="images/Instagram_Icon.png" width="2%"> </div> </a>
+            <a href="https://facebook.com/"><div title="Facebook"> <img src="images/Facebook_Icon.png" style="width:25px;height:25px;"> </div> </a>
+            <a href="https://Twitter.com/"><div title="Twitter"> <img src="images/Twitter_Icon.png" style="width:25px;height:25px;"> </div> </a>
+            <a href="https://Instagram.com/"><div title="Instagram"> <img src="images/Instagram_Icon.png" style="width:25px;height:25px;"> </div> </a>
         </FooterText>
 
-        <br /> <br />
+
 
         <FooterText id="copyright">&copy; Drift's Beddy-Bye 2023 -</FooterText>
+
+
+
     </footer>
 
 </body>
