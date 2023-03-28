@@ -3,9 +3,8 @@
 /***************************************************/
 
 body {
-    background-color: #35356d;
-    display: block;
-    padding: 0;
+    background-image: url("../images/background.jpeg");
+    background-color: #060636;
     margin: 0;
     border: 0;
 }       /* The background of the website. */
@@ -49,7 +48,8 @@ FooterText {
 }       /* Colour of the text in the footer */
 
 footer {
-    background-color: #20204b;
+    background-color: #19193a;
+    border-top: 2px solid #060636;
     border-radius: 10px;
     padding: 25px 0;
     margin-top: 50px;
@@ -68,19 +68,20 @@ footer {
     overflow: hidden;
     display: flex; /* use flexbox to center the items inside of the navigation bar */
     justify-content: center;
-    background-color: #20204b;
+    background-color: #19193a;
     position: fixed;
     top: 0;
     width: 100%;
     border-radius: 25px;
     z-index: 1;
-    border-bottom: 2px solid #14154c;
+    border-bottom: 2px solid #060636;
     padding: 5px;
     margin-bottom: 10px;
 }       /* Navigation bar's background that holds links to different pages of the website. */
 
     .navbar a {
         float: left;
+        background: #080823;
         display: block;
         color: #f2f2f2;
         padding: 14px 16px;
@@ -91,7 +92,7 @@ footer {
     }       /* Allows the text in the nav bar to be presented more neatly. */
 
 .navbar a:hover {
-            background: #060636;
+            background: #1a1a58;
             color: #f2f2f2;
             border-radius: 50px;
         }       /* When the mouse hovers over a link in the Nav Bar it darkens the link showing it can be clicked. */
