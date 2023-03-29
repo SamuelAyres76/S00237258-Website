@@ -39,6 +39,11 @@ h5 {
     margin: 10px;
 }       /* Used on images to make the borders softer*/
 
+p {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
 /***************************************************/
 /* Footer Content */
 /***************************************************/
