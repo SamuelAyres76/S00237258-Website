@@ -71,7 +71,7 @@ footer {
 
 .navbar {
     overflow: hidden;
-    display: flex; /* use flexbox to center the items inside of the navigation bar */
+    display: flex; /* use flex to center the items inside of the navigation bar */
     justify-content: center;
     background-color: #19193a;
     position: fixed;
